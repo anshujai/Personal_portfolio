@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+$teko :'Teko',
+sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: $teko;
+
+}
+
+.appContainer {
+    background-color: rgba(9, 27, 42, 255);
+    width: 100%;
+    
+
+
+    .app {
+        // height: 100%;
+        // padding: 40px 150px 80px 150px;
+        .navbarContainer {
+            ul {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                // justify-content: space-between;
+                // font-size: 40px;
+            }
+
+            li {
+                a {
+                    text-decoration: none;
+                }
+
+                ul li {
+                    // padding-left: 25px;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .homeContainer {
+        animation: fadein 2s;
+        // height: 100%;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+        }
+
+        .line2 {
+            color: #0ba7f0;
+        }
+
+        .intro {
+            font-size: 20px;
+        }
+
+        .buttons {
+            padding: 20px 0;
+
+            button {
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                color: #00233e;
+                background-color: #0ba7f0;
+                font-size: 20px;
+
+
+            }
+
+            button:hover {
+                border: .5px solid white;
+                background-color: #00233e;
+                color: white;
+                cursor: pointer;
+            }
+
+            .icons {
+                .icon {
+                    padding-right: 10px;
+                    height: 35px;
+                    width: 35px;
+                    margin-top: 30px;
+                    cursor: pointer;
+                }
+
+            }
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                border: none;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .projectContainer {
+        padding: 20px 10px 20px 0;
+        animation: fadein 2s;
+        // width: 100%;
+        // margin-left: 10px;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .cardContainer {
+            // width: 400px;
+            // height: 300px;
+            background-color: #0ba7f0;
+            border: none;
+            border-radius: 20px;
+            object-fit: contain;
+            margin: 50px;
+            cursor: pointer;
+            transition: 0.15s;
+
+            .top {
+                img {
+                    width: 100%;
+                    height: 90%;
+                    object-fit: contain;
+                    border-radius: 15px 15px 0 0;
+                }
+            }
+
+            .bottom {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+
+                .title {
+                    color: #00233e;
+                    // padding: 10px 5px;
+                    font-size: 30px;
+                    text-decoration: none;
+                }
+                .desc{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    // padding-left: 5px;
+                }
+            }
+
+        }
+
+        .cardContainer:hover {
+            transform: scale(1.02);
+            color: rgba(255, 255, 255, 1);
+            box-shadow: 0 5px 20px rgba(145, 92, 182, .4);
+
+        }
+
+
+    }
+
+    .skillsContainer {
+        animation: fadein 2s;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .part {
+            width: 60vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #0ba7f0;
+            position: relative;
+            border-radius: 10px;
+            margin: 40px 0;
+
+            h1 {
+                // position: relative;
+                // bottom: 40px;
+                padding-top: 20px;
+            }
+
+            .skills {
+                // width: 700px;
+                padding-bottom: 20px;
+
+                .cont {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    div {
+                        color: #0ba7f0;
+                    }
+
+                }
+
+            }
+
+
+
+        }
+    }
+
+    .contactContainer {
+        display: flex;
+        // width: 75vw;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 80vh;
+        padding: 20px;
+        color: #00233e;
+        animation: fadein 2s;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            // label {
+            //     font-size: 45px;
+            //     padding: 10px;
+            // }
+
+            input {
+                color: #00233e;
+                // padding: 10px;
+                // margin: 10px 10px;
+                // width: 500px;
+                // font-size: 20px;
+                border: none;
+                border-radius: 5px;
+            }
+
+            input:focus {
+                border: none;
+            }
+
+            .textInput {
+                // height: 200px;
+                // width: 500px;
+                // font-size: 20px;
+                color: #00233e;
+                margin: 30px;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+            }
+
+            button {
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                color: #00233e;
+                background-color: #0ba7f0;
+                font-size: 20px;
+
+
+            }
+
+            button:hover {
+                border: .5px solid white;
+                background-color: #00233e;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .font {
+
+        h2 {
+            font-size: 100px;
+        }
+
+        div {
+            font-size: 40px;
+            color: #0ba7f0;
+            margin-bottom: 20px;
+        }
+
+        button {
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: #00233e;
+            background-color: #0ba7f0;
+            font-size: 20px;
+
+
+        }
+
+        button:hover {
+            border: .5px solid white;
+            background-color: #00233e;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .icon {
+        padding-right: 10px;
+        height: 35px;
+        width: 35px;
+        margin-top: 30px;
+        border: none;
+        object-fit: contain;
+        cursor: pointer;
+        transition: 0.15s;
+    }
+
+    .icon:hover {
+        transform: scale(1.15);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .app {
+        padding: 40px 100px 80px 100px;
+    }
+
+    .navbarContainer {
+        ul {
+            font-size: 40px;
+            justify-content: space-between;
+
+            ul li {
+                padding-left: 25px;
+            }
+        }
+    }
+
+    .homeContainer {
+        display: grid;
+        grid-template-columns: auto 30vw;
+        height: 90vh;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: auto auto;
+        // .projects {
+        // margin-left: 60px;
+        // }
+    }
+
+    .cardContainer {
+        width: 400px;
+        height: 300px;
+
+
+    }
+
+    .skills {
+        width: 60vw;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .left {
+        .line1 {
+            font-size: 90px;
+        }
+
+        .line2 {
+            font-size: 70px;
+        }
+
+        .intro {
+            max-width: 50vw;
+        }
+    }
+
+    .right {
+        img {
+            height: 500px;
+        }
+    }
+
+    .contactContainer {
+        form {
+            input {
+                font-size: 20px;
+                padding: 10px;
+                margin: 10px 10px;
+                width: 500px;
+            }
+
+            .textInput {
+                height: 200px;
+                width: 500px;
+                font-size: 20px;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .app {
+        padding: 40px 80px 80px 80px;
+        // width: 10vw;
+    }
+
+    .navbarContainer {
+        ul {
+            font-size: 40px;
+            justify-content: space-between;
+
+            ul li {
+                padding-left: 25px;
+            }
+        }
+    }
+
+    .homeContainer {
+        display: grid;
+        grid-template-columns: auto 35vw;
+        height: 90vh;
+        // height: 100%;
+        // width: 100%;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: auto auto;
+
+        // .projects {
+        // margin-left: 60px;
+
+        // }
+    }
+
+    .cardContainer {
+        width: 300px;
+        height: 250px;
+
+        .title {
+            font-size: 30px;
+
+        }
+
+        .desc {
+            font-size: 15px;
+
+        }
+    }
+
+    .skills {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 60vw;
+    }
+
+
+    .left {
+        .line1 {
+            // padding-top: 200px;
+            font-size: 60px;
+        }
+
+        .line2 {
+            font-size: 50px;
+        }
+
+        .intro {
+            max-width: 50vw;
+        }
+    }
+
+    .contactContainer {
+        form {
+            input {
+                font-size: 20px;
+                padding: 10px;
+                margin: 10px 10px;
+                width: 500px;
+            }
+
+            .textInput {
+                height: 200px;
+                width: 500px;
+                font-size: 20px;
+
+            }
+        }
+    }
+
+    .right {
+        img {
+            height: 500px;
+        }
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .app {
+        padding: 40px 50px 80px 50px;
+
+    }
+
+    .navbarContainer {
+        ul {
+            font-size: 30px;
+            justify-content: flex-start;
+
+            ul li {
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .homeContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // width: 80vw;
+    }
+    .projectContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // width: 90vw;
+    }
+
+    .cardContainer {
+        width: 350px;
+        height: 250px;
+
+        .title {
+            font-size: 25px;
+
+        }
+
+        .desc {
+            font-size: 15px;
+
+        }
+    }
+
+    .skills {
+        display: grid;
+        // justify-content: space-evenly;
+        // flex-direction: row;
+        grid-template-rows: 100px 100px;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .contactContainer {
+        form {
+            input {
+                font-size: 20px;
+                padding: 10px;
+                margin: 10px 10px;
+                width: 70vw;
+            }
+
+            .textInput {
+                height: 200px;
+                width: 70vw;
+                font-size: 20px;
+
+            }
+        }
+    }
+
+
+    .left {
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+        .line1 {
+            font-size: 80px;
+        }
+
+        .line2 {
+            font-size: 50px;
+        }
+
+        .intro {
+            max-width: 80vw;
+        }
+    }
+
+    .right {
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        img {
+            width: 60vw;
+            height: 60vw;
+
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .app {
+        padding: 30px 0px 100px 20px;
+    }
+
+    .navbarContainer {
+        ul {
+            font-size: 25px;
+            justify-content: flex-start;
+
+            ul li {
+                padding-left: 10px;
+            }
+        }
+    }
+
+    .homeContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+    .cardContainer {
+        width: 200px;
+        height: 220px;
+
+        .title {
+            font-size: 22px;
+
+        }
+        .desc {
+            max-width:180px ;
+            font-size: 14px;
+            // padding: 5px;
+            margin-left: 10px;
+            // margin-right: 10px;
+
+        }
+    }
+
+    .projectContainer {
+        h1{
+            font-size: 10px;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // width: 100%;
+        // width: 70vw;
+    }
+
+    .left {
+        .line1 {
+            font-size: 50px;
+        }
+
+        .line2 {
+            font-size: 30px;
+        }
+
+        .intro {
+            max-width: 70vw;
+        }
+    }
+
+    .right {
+        img {
+            height: 60vw;
+            width: 60vw;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    app {
+        padding: 20px 20px 100px 20px;
+        // justify-content: flex-start;
+        // scrollbar: none;
+
+
+    }
+
+    .right {
+        img {
+            height: 200px;
+            width: 200px;
+        }
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbarContainer {
+        ul {
+            font-size: 20px;
+
+            ul li {
+                padding-left: 10px;
+            }
+        }
+        
+    }
+    .projectContainer {
+        h1{
+            font-size: 10px;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // width: 90vw;
+    }
+    .cardContainer {
+        width: 60vw;
+        // height: 200px;
+
+        .title {
+            font-size: 12px;
+            max-width: 55vw;
+
+        }
+        .desc {
+            font-size: 12px;
+            max-width: 150px;
+
+        }
+    }
+
+}
